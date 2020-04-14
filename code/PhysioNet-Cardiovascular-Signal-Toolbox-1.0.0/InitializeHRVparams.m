@@ -62,8 +62,8 @@ end
 % Set up input options for a specific project
 switch project_name   
     % Define new project name and parameters
-    case 'MyProjectName'                   % Update with your project name
-        HRVparams.Fs = NaN;                % Spacify sampling frequency
+    case 'test'                   % Update with your project name
+        HRVparams.Fs = 128;                % Spacify sampling frequency
         HRVparams.readdata = '';           % (Optional) Specify name for data input folder
         HRVparams.writedata = '';          % (Optional) Specify name for data output folder
         HRVparams.datatype = '';           % (Optional) Spacify Data type of input
@@ -97,7 +97,7 @@ switch project_name
         HRVparams.writedata = strcat('OutputData', filesep, 'ResultsHRT');
         HRVparams.Fs = 128;
     otherwise                  % Default
-        HRVparams.Fs = NaN;                          % Spacify sampling frequency
+        HRVparams.Fs = 128;                          % Spacify sampling frequency
         HRVparams.writedata = 'HRV_Output';          % (Optional) Specify name for data output folder
            
 end

@@ -100,7 +100,6 @@ end
 if isa(subID,'cell'); subID = string(subID); end
 
 
-
 % Start HRV analysis
 try   
     switch InputFormat
